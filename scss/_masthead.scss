@@ -28,6 +28,17 @@ header.masthead {
             border-radius: 3px;
         }
     }
+    .screen-info {
+        border-radius: 15px;
+        border: solid 1px white;
+        padding: 15px;
+        background-color: fade-out($theme-tertiary, .80);
+
+        text-align: center;
+        span.toShow {
+            display: none;
+        }
+    }
     @media (min-width: 992px) {
         height: 100vh;
         min-height: 775px;
