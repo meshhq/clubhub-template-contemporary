@@ -4,9 +4,7 @@
 
 ## Preview
 
-[![New Age Preview](https://startbootstrap.com/assets/img/templates/new-age.jpg)](https://blackrockdigital.github.io/startbootstrap-new-age/)
-
-**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-new-age/)**
+![New Age Preview](./img/readme-preview.png)
 
 ## Status
 
