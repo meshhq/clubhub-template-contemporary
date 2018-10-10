@@ -160,9 +160,9 @@ header.masthead {
   padding-top: 150px;
   padding-bottom: 100px;
   color: white;
-  background: url("../img/bg-pattern.png"), #A5ACAF;
-  background: url("../img/bg-pattern.png"), -webkit-gradient(linear, right top, left top, from(#A5ACAF), to(#002145));
-  background: url("../img/bg-pattern.png"), linear-gradient(to left, #A5ACAF, #002145);
+  background: url("../img/backgrounds/bg-pattern.png"), #A5ACAF;
+  background: url("../img/backgrounds/bg-pattern.png"), -webkit-gradient(linear, right top, left top, from(#A5ACAF), to(#002145));
+  background: url("../img/backgrounds/bg-pattern.png"), linear-gradient(to left, #A5ACAF, #002145);
 }
 
 header.masthead .header-content {
