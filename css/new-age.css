@@ -186,6 +186,18 @@ header.masthead .device-container .screen img {
   border-radius: 3px;
 }
 
+header.masthead .screen-info {
+  border-radius: 15px;
+  border: solid 1px white;
+  padding: 15px;
+  background-color: rgba(0, 33, 69, 0.2);
+  text-align: center;
+}
+
+header.masthead .screen-info span.toShow {
+  display: none;
+}
+
 @media (min-width: 992px) {
   header.masthead {
     height: 100vh;
