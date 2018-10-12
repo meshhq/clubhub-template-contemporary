@@ -452,21 +452,6 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   padding: 15px 45px;
 }
 
-.alert-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-.alert-box .alert {
-  display: none;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .carousel-control-next .fa-chevron-right, .carousel-control-next .fa-chevron-left, .carousel-control-prev .fa-chevron-right, .carousel-control-prev .fa-chevron-left {
   color: #002145;
 }
@@ -476,4 +461,23 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   bottom: 1.00%;
   left: 5.97%;
   right: 5.97%;
+}
+
+.alert-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.alert-box .alert {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
 }
