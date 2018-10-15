@@ -462,3 +462,22 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   left: 5.97%;
   right: 5.97%;
 }
+
+.alert-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.alert-box .alert {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+}
