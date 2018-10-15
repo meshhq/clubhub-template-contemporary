@@ -7,27 +7,33 @@ header.masthead {
     padding-bottom: 100px;
 
     color: white;
-    background: url('../img/backgrounds/bg-pattern.png'), $theme-secondary;
-    background: url('../img/backgrounds/bg-pattern.png'), -webkit-linear-gradient(to left, $theme-secondary, $theme-tertiary);
-    background: url('../img/backgrounds/bg-pattern.png'), linear-gradient(to left, $theme-secondary, $theme-tertiary);
+
+    background: $theme-secondary;
+    background: -webkit-linear-gradient(to left, $theme-secondary, $theme-tertiary);
+    background: linear-gradient(to left, $theme-secondary, $theme-tertiary);
+
     .header-content {
         max-width: 500px;
         margin-bottom: 100px;
 
         text-align: center;
+
         h1 {
             font-size: 30px;
             font-weight: bold;
         }
     }
+
     .device-container {
         max-width: 325px;
         margin-right: auto;
         margin-left: auto;
+
         .screen img {
             border-radius: 3px;
         }
     }
+
     .screen-info {
         border-radius: 15px;
         border: solid 1px white;
@@ -35,23 +41,28 @@ header.masthead {
         background-color: fade-out($theme-tertiary, .80);
 
         text-align: center;
+
         span.toShow {
             display: none;
         }
     }
+
     @media (min-width: 992px) {
         height: 100vh;
         min-height: 775px;
         padding-top: 0;
         padding-bottom: 0;
+
         .header-content {
             margin-bottom: 0;
 
             text-align: left;
+
             h1 {
                 font-size: 50px;
             }
         }
+
         .device-container {
             max-width: 325px;
         }
