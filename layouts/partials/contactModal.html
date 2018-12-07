@@ -1,0 +1,45 @@
+<div class="alert-box">
+    <div class="alert alert-danger">Error trying to send email...</div>
+    <div class="alert alert-primary">Email Sent!</div>
+</div>
+
+<div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="contact-modal-label">Contact</h5>
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="sender-first-name">First Name:</label>
+                        <input type="text" class="form-control" id="sender-first-name" required='true'>
+
+                        <label for="sender-last-name">Last Name:</label>
+                        <input type="text" class="form-control" id="sender-last-name" required='true'>
+
+                        <label for="sender-email">Email:</label>
+                        <input type="email" class="form-control" id="sender-email" required='true'>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">Message:</label>
+                        <textarea class="form-control" id="message-text" required='true'></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button
+                    id="email-form-submit"
+                    type="button"
+                    class="btn btn-primary btn-xl"
+                >
+                    Send Message
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
