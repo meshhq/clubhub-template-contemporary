@@ -11,7 +11,7 @@ body {
 }
 
 body {
-  font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
 }
 
 a {
@@ -90,10 +90,9 @@ section h2 {
 }
 
 #mainNav .navbar-nav > li > a {
-  font-size: 11px;
+  font-size: 17px;
   font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
   letter-spacing: 2px;
-  text-transform: uppercase;
 }
 
 #mainNav .navbar-nav > li > a.active {
@@ -172,8 +171,14 @@ header.masthead .header-content {
 }
 
 header.masthead .header-content h1 {
-  font-size: 30px;
-  font-weight: bold;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+header.masthead .header-subtitle {
+    font-size: 23px;
+    font-weight: 300;
 }
 
 header.masthead .device-container {
@@ -426,6 +431,27 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 .no-gutter > [class*='col-'] {
   padding-right: 0;
   padding-left: 0;
+}
+
+.custom-nav .nav-item {
+    width: 140px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: none;
+}
+
+.btn.contact-btn {
+    background-color: #2A8641;
+    color: white;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: none;
+    padding: 14px 30px 14px 30px;
+}
+
+.btn-outline.login-btn {
+    border-radius: 4px;
 }
 
 .btn-outline {
