@@ -8,9 +8,9 @@ header.masthead {
 
     color: white;
 
-    background: $theme-secondary;
-    background: -webkit-linear-gradient(to left, $theme-secondary, $theme-tertiary);
-    background: linear-gradient(to left, $theme-secondary, $theme-tertiary);
+    background-image: url('https://source.unsplash.com/-xvKQuNtOhI/1600x900');
+    background-repeat: no-repeat;
+    background-size: cover;
 
     .header-content {
         max-width: 500px;
