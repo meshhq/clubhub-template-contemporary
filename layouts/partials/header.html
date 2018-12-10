@@ -5,9 +5,27 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
-        <meta name="author" content="">
     
-        <title>ClubHub - Modern Club Software, Finally.</title>
+        
+        <!-- Primary Meta Tags -->
+        <title>{{.Site.Title}}</title>
+        <meta name="title" content="{{.Site.Title}}">
+        <meta name="description" content="{{.Params.description}}">
+        <link rel="shortcut icon" href="{{.Site.BaseURL}}/img/favicon.ico">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+		<meta property="og:url" content="{{.Site.BaseURL}}">
+		<meta property="og:title" content="{{.Site.Title}}">
+		<meta property="og:description" content="{{.Params.description}}">
+		<meta property="og:image" content="{{.Params.meta_image}}">
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="{{.Site.BaseURL}}">
+		<meta property="twitter:title" content="{{.Site.Title}}">
+		<meta property="twitter:description" content="{{.Params.description}}">
+        <meta property="twitter:image" content="{{.Params.meta_image}}">
     
         <!-- Bootstrap core CSS -->
         <link href="{{.Site.BaseURL}}/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
