@@ -8,9 +8,9 @@ header.masthead {
 
     color: white;
 
-    background: $theme-secondary;
-    background: -webkit-linear-gradient(to left, $theme-secondary, $theme-tertiary);
-    background: linear-gradient(to left, $theme-secondary, $theme-tertiary);
+    background-image: url('https://source.unsplash.com/-xvKQuNtOhI/1600x900');
+    background-repeat: no-repeat;
+    background-size: cover;
 
     .header-content {
         max-width: 500px;
@@ -19,9 +19,15 @@ header.masthead {
         text-align: center;
 
         h1 {
-            font-size: 30px;
-            font-weight: bold;
+            font-size: 50px;
+            font-weight: 700;
+            margin-bottom: 0px;
         }
+    }
+
+    .header-subtitle {
+        font-size: 23px;
+        font-weight: 300;
     }
 
     .device-container {
