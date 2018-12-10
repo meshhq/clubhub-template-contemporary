@@ -23,7 +23,8 @@
         <link rel="stylesheet" href="{{.Site.BaseURL}}/device-mockups/device-mockups.min.css">
     
         <!-- Custom styles for this template -->
-        <link href="{{.Site.BaseURL}}/css/new-age.css" rel="stylesheet">
+        {{ $style := resources.Get "scss/new-age.scss" | toCSS }}
+        <link href="{{ $style.Permalink }}" rel="stylesheet">
 </head>
 
 </html>
