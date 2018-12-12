@@ -1,5 +1,7 @@
 // Styling for the navbar
 #mainNav {
+    margin-top: 20px;
+    margin-bottom: 40px;
     border-color: fade-out($gray-darker, .95);
     background-color: fade-out($theme-secondary, .70);
     @include transition-all;
@@ -22,8 +24,8 @@
     .navbar-nav {
         > li {
             > a {
-                font-size: 12px;
-                @include alt-font;
+                font-size: 14px;
+                font-weight: 500;
                 &.active {
                     color: $theme-primary !important;
                     background-color: transparent;
