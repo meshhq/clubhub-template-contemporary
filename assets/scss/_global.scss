@@ -1,4 +1,26 @@
 // Global styling for this template
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/Avenir-Medium-09.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/Avenir-Light-07.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/Avenir-Heavy-05.ttf');
+    font-weight: 700;
+}
+
+@mixin avenir-font {
+    font-family: Avenir;
+}
+
 html,
 body {
     width: 100%;
@@ -6,16 +28,18 @@ body {
 }
 
 body {
-    @include body-font;
+    @include avenir-font;
 }
 
 a {
     color: $theme-primary;
     @include transition-all;
+
     &:hover,
     &:focus {
         color: darken($theme-primary, 10%);
     }
+    @include avenir-font;
 }
 
 hr {
@@ -35,17 +59,23 @@ h3,
 h4,
 h5,
 h6 {
-    @include heading-font;
+    @include avenir-font;
 }
 
 p {
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 20px;
+    font-family: Avenir;
+}
+
+a {
+    font-family: Avenir;
 }
 
 section {
     padding: 100px 0;
+
     h2 {
         font-size: 50px;
     }
