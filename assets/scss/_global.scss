@@ -2,6 +2,19 @@
 @font-face {
     font-family: 'Avenir';
     src: url('../fonts/Avenir-Medium-09.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/Avenir-Light-07.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/Avenir-Heavy-05.ttf');
+    font-weight: 700;
 }
 
 @mixin avenir-font {
