@@ -1,0 +1,49 @@
+
+#hero-container {
+    margin-bottom: 24px;
+    height: 320px;
+    width: 100%;
+    background: url(https://source.unsplash.com/-xvKQuNtOhI/1024x320);
+    
+    .hero-row {
+        height: 100%;
+        padding-top: 84px;
+    }
+
+    .hero-col {
+        text-align: center
+    }
+
+    .hero-title {
+        color: white;
+    }
+
+    .hero-subtitle {
+        color: white;
+    }
+
+    .hero-button-login-col {
+        text-align: right;
+
+        @media (max-width: $screen-sm) { 
+            text-align: center;
+        }
+    }
+
+    .hero-button-info-col {
+        text-align: left;
+
+        @media (max-width: $screen-sm) { 
+            text-align: center;
+        }
+    }
+
+    .hero-button {
+        @include ch-button(white, white, transparent);
+
+        @media (max-width: $screen-sm) { 
+            width: 240px;
+            margin-bottom: 12px;
+        }
+    }
+}

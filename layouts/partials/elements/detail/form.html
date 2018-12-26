@@ -1,0 +1,13 @@
+<div class="detail-form">
+    <h5>{{ .title}}</h5>
+    <form>
+        <div class="form-row detail-form-row justify-content-between">
+            {{ range .inputs }}
+            <div class="col-sm-12 col-md-6 detail-form-col">
+                <label>{{ .title }}</label>
+                <input type="text" class="form-control" placeholder="{{.placeholder}}">
+            </div>
+            {{ end }}
+        </div>
+    </form>
+</div>

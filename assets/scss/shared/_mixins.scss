@@ -1,8 +1,8 @@
 // Mixins
 @mixin transition-all() {
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    transition: all .35s;
+    -webkit-transition: all .15s;
+    -moz-transition: all .15s;
+    transition: all .15s;
 }
 
 @mixin background-cover() {
@@ -10,6 +10,15 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+@mixin ch-button($color, $border, $background) {
+    width: 120px;
+    height: 32px;
+
+    color: $color;
+    border-color: $border;
+    background-color: $background;
 }
 
 @mixin button-variant($color, $background, $border) {

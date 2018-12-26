@@ -1,0 +1,48 @@
+#benefit-container {
+    
+    .benefit-title-col {
+        text-align: center;
+    }
+
+    .benefit-detail-col {
+        max-width: 250px;
+        padding: 0px;
+
+        @media (max-width: $screen-md) { 
+            max-width: 100%;
+            margin-bottom: 24px;
+        }
+
+        .benefit-image {
+            width: 100%;
+            height: 167px;
+            object-fit: cover;
+            margin-bottom: 24px;
+        }
+
+        .benefit-title {
+            color: $theme-primary;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .benefit-description {
+            font-size: 12px;
+            margin-bottom: 12px;
+        }
+
+        .learn-more-container {
+
+            .benefit-link {
+                color: $theme-primary;
+                font-size: 10px;
+                font-weight: 500;
+                height: 16px;
+            }
+
+            i {
+                color: $theme-primary;
+            }
+        }
+    }
+}

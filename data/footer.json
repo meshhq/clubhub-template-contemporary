@@ -1,0 +1,32 @@
+{
+    "sections": [{
+        "title": "DISCOVER",
+        "items": [{
+            "title": "Golf"
+        },
+        {
+            "title": "Events"
+        },
+        {
+            "title": "Membership"
+        },
+        {
+            "title": "Club Info"
+        }]
+    },
+    {
+        "title": "CONTACT",
+        "items": [{
+            "title": "1234 Country Club Drive"
+        },
+        {
+            "title": "San Francisco, CA, 91234"
+        },
+        {
+            "title": "425-445-6042"
+        },
+        {
+            "title": "info@club.com"
+        }]
+    }]
+}

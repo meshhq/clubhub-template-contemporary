@@ -1,0 +1,95 @@
+// Styling for the navbar
+#mainNav {
+    @include transition-all;
+
+    padding: 10px 24px 10px 24px;
+
+    @media (max-width: $screen-sm) { 
+        padding: 10px 12px 10px 12px;
+    }
+
+    h5 {
+        display: inline;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .brand-logo {
+        display: inline;
+        max-width: 40px;
+        margin-right: 6px;
+    }
+
+    .login-button {
+        @include ch-button($theme-primary,$theme-primary, white);
+
+        &:hover,
+        &:focus {
+            color: white !important; 
+            border-color: $theme-primary !important;
+            background: $theme-primary !important;
+        }
+    }
+
+    .navbar-toggler {
+        padding: 8px 10px;
+        color: $theme-primary-light;
+        border-color: $theme-primary-light;
+    }
+
+    .navbar-nav {
+
+        .nav-item {
+            font-weight: 500;   
+            margin-left: 16px;
+            text-align: center;
+            text-transform: none;
+        }
+    }
+
+    @media (min-width: 992px) {
+        border-color: transparent;
+        background-color: transparent;
+
+        .navbar-brand {
+            &:hover,
+            &:focus {
+                color: $theme-primary;
+            }
+        }
+
+        .navbar-nav>li>a,
+        .navbar-nav>li>a:focus {
+            font-weight: 300;   
+            color: $theme-primary-light;
+            &:hover {
+                font-weight: 500;  
+                color: $theme-primary;
+            }
+        }
+
+        &.navbar-shrink {
+            border-color: fade-out($gray-darker, .9);
+
+            .navbar-brand {
+                color: $gray-darker;
+
+                &:hover,
+                &:focus {
+                    color: $theme-primary;
+                }
+            }
+
+            .navbar-nav>li>a,
+            .navbar-nav>li>a:focus {
+                color: white;
+
+                &:hover {
+                    color: $theme-secondary;
+                }
+            }
+        }
+    }
+}

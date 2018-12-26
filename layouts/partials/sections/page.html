@@ -1,0 +1,41 @@
+<div class="container-fluid" id="page-container">
+    <div class="row justify-content-center section-row">
+        <div class="col section-col">
+            <div class="row detail-row">
+                <div class="col col-md-3 detail-nav-col">
+                    {{ range $.Site.Data.pages.golf.sections }}
+                        <a class="detail-nav-link">{{ .title }} </a>
+                    {{ end }}
+                </div>
+                <div class="col col-md-9 detail-content-col">
+                    {{ $section := (index $.Site.Data.pages.golf.sections 0) }}
+                    {{ range $section.items }}
+                        {{ if eq .type "paragraph" }}
+                            {{ partial "elements/detail/paragraph.html" . }}
+                        {{ end }}
+
+                        {{ if eq .type "image" }}
+                            {{ partial "elements/detail/image.html" . }}
+                        {{ end }}
+
+                        {{ if eq .type "table" }}
+                            {{ partial "elements/detail/table.html" . }}
+                        {{ end }}
+
+                        {{ if eq .type "carousel" }}
+                        
+                        {{ end }}
+
+                        {{ if eq .type "cta" }}
+                            {{ partial "elements/detail/cta.html" . }}
+                        {{ end }}
+
+                        {{ if eq .type "form" }}
+                            {{ partial "elements/detail/form.html" . }}
+                        {{ end }}
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

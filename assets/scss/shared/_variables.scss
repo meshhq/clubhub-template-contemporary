@@ -2,6 +2,9 @@
 
 // Gray and Brand Colors for use across theme
 
+$ch-black: black;
+$ch-gray: gray;
+
 $theme-primary:  white; // #fdcc52;
 $theme-secondary:  #A5ACAF; // #7b4397;
 $theme-tertiary:   #002145; // #dc2430;
@@ -16,3 +19,18 @@ $gray-lighter:     lighten($gray-base, 93.5%); // #eee
 $brand-twitter:		#1da1f2;
 $brand-facebook:	#3b5998;
 $brand-google-plus:	#dd4b39;
+
+$theme-primary: #17493c;
+$theme-primary-dark: #11372D;
+$theme-primary-light: #586B66;
+$theme-primary-lighter: #8BA49D;
+$theme-primary-gray: #E2E8E7;
+
+$primary-font: 'Tinos', serif;
+
+$max-content-width: 748px;
+
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
