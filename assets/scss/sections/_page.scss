@@ -2,4 +2,18 @@
     line-height: 32px;
     display: block;
     color: $theme-primary-light;
+    text-decoration: none;
+}
+
+.detail-nav-link-selected {
+    line-height: 32px;
+    display: block;
+    color: $theme-primary;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.side-nav {
+    position: sticky;
+top: 20px;
 }

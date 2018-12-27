@@ -4,6 +4,7 @@
     "cta": false,
     "sections": [{
             "title": "OVERVIEW",
+            "link": "/golf/overview/",
             "items": [
                 {
                     "type": "paragraph",
@@ -99,19 +100,24 @@
             ]
         },
         {
-            "title": "SCORECARD"
+            "title": "SCORECARD",
+            "link": "/golf/scorecard/"
         },
         {
-            "title": "HOLE TOUR"
+            "title": "HOLE TOUR",
+            "link": "/golf/tour/"
         },
         {
-            "title": "LESSONS"
+            "title": "LESSONS",
+            "link": "/golf/lessons/"
         },
         {
-            "title": "PHOTO GALLERY"
+            "title": "PHOTO GALLERY",
+            "link": "/golf/gallery/"
         },
         {
-            "title": "RECIPROCAL COURSES"
+            "title": "RECIPROCAL COURSES",
+            "link": "/golf/reciprocal/"
         }
     ]
 }

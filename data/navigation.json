@@ -1,21 +1,21 @@
 [{
         "title": "Golf",
-        "link": ""
+        "link": "/golf/overview/"
     },
     {
         "title": "Weddings",
-        "link": ""
+        "link": "/weddings/overview/"
     },
     {
         "title": "Events",
-        "link": ""
+        "link": "/events/overview/"
     },
     {
         "title": "Membership",
-        "link": ""
+        "link": "/membership/overview/"
     },
     {
         "title": "Club Info",
-        "link": ""
+        "link": "/info/overview/"
     }
 ]

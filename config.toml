@@ -2,3 +2,8 @@ baseURL = "https://tryclubhub.com"
 languageCode = "en-us"
 title = "ClubHub"
 publishDir = "docs"
+
+[[menu.main]]
+    name = "Golf"
+    url = "/golf/"
+    weight = 1
