@@ -9,7 +9,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto custom-nav">
-            {{ range $.Site.Data.navigation }}
+            {{ range $.Site.Data.shared.navigation }}
             <li class="nav-item">
                 <a id="nav-link" class="nav-link js-scroll-trigger" href="{{.link}}">{{.title}}</a>
             </li>
