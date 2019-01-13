@@ -1,0 +1,19 @@
+.detail-info {
+    border: 1px $theme-primary-gray solid;
+    border-top: 2px $theme-primary solid;
+    padding: 28px 32px 38px 32px;
+    
+    .title {
+        font-size: 12px;
+        font-weight: 500;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .detail {
+        font-size: 12px;
+        font-weight: 300;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+}

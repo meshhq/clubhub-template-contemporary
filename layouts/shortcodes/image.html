@@ -1,0 +1,7 @@
+<div class="detail-shortcode detail-image">
+    {{ $section := index .Site.Data.sections (.Get 0) }}
+    {{ $data := index $section (.Get 1) }}
+    {{ $image := index $data (.Get 2) }}
+    <img src="{{$image.imageURL}}">
+    <p>{{ $image.subtitle }}</p>
+ </div>

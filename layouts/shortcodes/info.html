@@ -1,0 +1,25 @@
+<div class="detail-shortcode detail-info">
+    {{ $section := index .Site.Data.sections (.Get 0) }}
+    {{ $data := index $section (.Get 1) }}
+    {{ $info := index $data (.Get 2) }}
+    <div class="row">
+        <div class="col">
+            <p class="title">LOCATION</p>
+            <p class="detail">{{ $info.address.street}}</p>
+            <p class="detail">{{ $info.address.city }} {{ $info.address.state }} {{ $info.address.zip }}</p>
+        </div>
+        <div class="col">
+            <p class="title">HOURS</p>
+            <p class="detail">{{ $info.hours }}</p>
+            <p class="detail">{{ $info.hours }}</p>
+        </div>
+        <div class="col">
+            <p class="title">GET IN TOUCH</p>
+            <p class="detail">{{ $info.contact.phone }}</p>
+            <p class="detail">{{ $info.contact.email }}</p>
+        </div>
+    </div>
+    <div class="row">
+        
+    </div>
+ </div>

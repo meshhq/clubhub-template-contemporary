@@ -1,0 +1,7 @@
+<div class="detail-shortcode detail-cta">
+    {{ $section := index .Site.Data.sections (.Get 0) }}
+    {{ $data := index $section (.Get 1)}}
+    {{ $cta := index $section (.Get 2)}}
+    <p>{{ $data.cta.subtitle }}</p>
+    <h4>{{ $data.cta.title }}</img>
+ </div>

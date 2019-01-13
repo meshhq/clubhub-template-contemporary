@@ -1,14 +1,14 @@
 <div class="container-fluid" id="hero-container">
     <div class="row hero-row">
         <div class="col hero-col">
-            <h1 class="hero-title">Broadmoor</h1>
-            <p class="hero-subtitle">Golf Club</p>
+            <h1 class="hero-title">{{ $.Site.Data.index.hero.title }}</h1>
+            <p class="hero-subtitle">{{ $.Site.Data.index.hero.subtitle }}</p>
             <div class="row align-items-center">
                 <div class="col-sm-12 col-md-6 hero-button-login-col">
-                    <button class="btn btn-outline-dark hero-button">MEMBER LOGIN</button>
+                    <button class="btn btn-outline-dark hero-button">{{ $.Site.Data.index.hero.leftButton }}</button>
                 </div>
                 <div class="col-sm-12 col-md-6 hero-button-info-col">
-                    <button class="btn btn-outline-dark hero-button">REQUEST INFO</button>
+                    <button class="btn btn-outline-dark hero-button">{{ $.Site.Data.index.hero.rightButton }}</button>
                 </div>
             </div>
         </div>

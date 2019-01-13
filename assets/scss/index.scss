@@ -10,18 +10,22 @@
 
 // Sections
 @import "sections/single.scss";
+@import "sections/elements/paragraph.scss";
+@import "sections/elements/carousel.scss";
 
 // Shared
 @import "shared/navbar.scss";
 @import "shared/hero.scss";
 @import "shared/footer.scss";
 
-// Page Elements
-@import "elements/detail/paragraph.scss";
-@import "elements/detail/image.scss";
-@import "elements/detail/cta.scss";
-@import "elements/detail/table.scss";
-@import "elements/detail/form.scss";
+// Shortcodes
+@import "shortcodes/image.scss";
+@import "shortcodes/cta.scss";
+@import "shortcodes/form.scss";
+@import "shortcodes/gallery.scss";
+@import "shortcodes/table.scss";
+@import "shortcodes/carousel.scss";
+@import "shortcodes/info.scss";
 
 // Old
 @import "old/masthead.scss";
@@ -32,3 +36,30 @@
 @import "old/device.scss";
 @import "old/alerts.scss";
 @import "old/buttons.scss";
+
+h5 {
+    margin-bottom: 24px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 27px;
+}
+
+.nav-title {
+    font-size: 21px;
+    margin-bottom: 0px;
+    font-family: $primary-font;
+    color: $theme-primary;
+    font-weight: 700;
+}
+
+.md-link {
+    font-size: 16px;
+    line-height: 27px;
+}
+
+.detail-shortcode {
+    margin-top: 36px;
+    margin-bottom: 36px;
+}

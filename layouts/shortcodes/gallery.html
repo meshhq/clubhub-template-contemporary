@@ -1,0 +1,22 @@
+<div class="detail-shortcode detail-gallery">
+     <div class="row justify-content-between detail-gallery-row">
+        {{ $section := index .Site.Data.sections (.Get 0) }}
+        {{ $data := index $section (.Get 1)}}
+        {{ range $data.images}}
+            <div class="col-xs-12 col-sm-6 col-md-4 detail-gallery-col">
+                <div class="gallery-image-container">
+                    <img src="{{ .imageURL }}" data-toggle="modal" data-target="#carousel-modal"></img>
+                </div>
+            </div>
+        {{end}}
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="carousel-modal" tabindex="-1" role="dialog" aria-labelledby="carousel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            {{ partial "sections/carousel.html" . }}
+        </div>
+    </div>
+ </div>
