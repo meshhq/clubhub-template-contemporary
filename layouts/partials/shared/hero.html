@@ -3,14 +3,17 @@
         <div class="col hero-col">
             <h1 class="hero-title">{{ $.Site.Data.index.hero.title }}</h1>
             <p class="hero-subtitle">{{ $.Site.Data.index.hero.subtitle }}</p>
-            <div class="row align-items-center">
+
+            {{ if eq .Page.Title "index" }}
+            <div class="row hero-button-row align-items-center">
                 <div class="col-sm-12 col-md-6 hero-button-login-col">
-                    <button class="btn btn-outline-dark hero-button">{{ $.Site.Data.index.hero.leftButton }}</button>
+                    <button class="btn btn-outline-dark hero-button login-button">{{ $.Site.Data.index.hero.leftButton }}</button>
                 </div>
                 <div class="col-sm-12 col-md-6 hero-button-info-col">
-                    <button class="btn btn-outline-dark hero-button">{{ $.Site.Data.index.hero.rightButton }}</button>
+                    <button class="btn btn-outline-dark hero-button info-button">{{ $.Site.Data.index.hero.rightButton }}</button>
                 </div>
             </div>
+            {{ end }}
         </div>
     </div>
 </div>

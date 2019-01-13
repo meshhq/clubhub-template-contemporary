@@ -6,9 +6,10 @@
                     <img class="feature-image" src="{{ $.Site.Data.index.feature.imageURL }}">
                 </div>
                 <div class="col col-sm-12 col-md-6 feature-detail-col">
-                    <h6>{{ $.Site.Data.index.feature.subtitle }}</h6>
-                    <h4>{{ $.Site.Data.index.feature.title }}</h4>
-                    <p>{{ $.Site.Data.index.feature.detail }} <a>Read More</a></p>
+                    {{$feature := $.Site.Data.index.feature}}
+                    <h6>{{ $feature.subtitle }}</h6>
+                    <h4>{{ $feature.title }}</h4>
+                    <p>{{ $feature.detail }} <a href="{{ $feature.link }}">Read More</a></p>
                 </div>
             </div>
         </div>

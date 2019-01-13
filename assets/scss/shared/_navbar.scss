@@ -54,6 +54,7 @@
         background-color: transparent;
 
         .navbar-brand {
+            margin-right: 0rem;
             &:hover,
             &:focus {
                 color: $theme-primary;
