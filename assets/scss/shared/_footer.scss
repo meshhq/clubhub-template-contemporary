@@ -3,15 +3,18 @@
 
     .footer-link {
         display: block;
-        font-size: 12px;
+        font-size: 13px;
         padding-bottom: 6px;
         color: $theme-primary;
         text-decoration: none;
     }
 
+    .footer-row {
+        margin-top: 24px;
+        margin-bottom: 72px;
+    }
     .footer-col {
         padding: 0px;
-        max-width: 250px;
         padding-right: 24px;
 
         @media (max-width: $screen-md) {
@@ -24,7 +27,7 @@
         .footer-logo-container {
             width: 60px;
             display: inline-block;
-            margin-right: 32px;
+            margin-right: 24px;
 
             @media (max-width: $screen-md) {
                 width: 100%;
@@ -53,7 +56,7 @@
         
             .copyright-container {
                 p {
-                    font-size: 10px;
+                    font-size: 12px;
                     margin-bottom: 0px;
                 }
         
@@ -70,8 +73,8 @@
         }
 
         .brand-logo {
-            max-width: 60px;
-            max-height: 60px;
+            max-width: 80px;
+            max-height: 120px;
         }
     }
 

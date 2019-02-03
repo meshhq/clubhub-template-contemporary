@@ -2,6 +2,21 @@
     {{ $section := index .Site.Data.sections (.Get 0) }}
     {{ $data := index $section (.Get 1)}}
     {{ $cta := index $section (.Get 2)}}
-    <p>{{ $data.cta.subtitle }}</p>
-    <h4>{{ $data.cta.title }}</img>
+    <div class="row detail-cta-row">
+        <div class="col detail-cta-col">
+            <div class="row detail-subtitle-row">
+                <div class="col detail-subtitle-col">
+                    <p>{{ $data.cta.subtitle }}</p>
+                </div>
+            </div>
+            <div class="row detail-title-row">
+                <div class="col col-10 detail-title-col">
+                    <h4>{{ $data.cta.title }}</h4>
+                </div>
+                <div class="col col-2 detail-icon-col d-flex align-items-center justify-content-end">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>    
+        </div>
+    </div>
  </div>

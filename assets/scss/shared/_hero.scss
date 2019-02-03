@@ -1,12 +1,15 @@
-
-#hero-container {
+.hero-container {
+    height: 460px;
     margin-bottom: 24px;
-    padding-top: 72px;
-    padding-bottom: 72px;
+    padding: 0px;
     width: 100%;
-    background: url(https://source.unsplash.com/-xvKQuNtOhI/1500x300);
-    
+
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+
     .hero-row {
+        background-color: rgba(0, 0, 0, 0.25);
         height: 100%;
     }
 
@@ -16,10 +19,13 @@
 
     .hero-title {
         color: white;
+        margin-bottom: 12px;
     }
 
     .hero-subtitle {
         color: white;
+        margin-bottom: 36px;
+        font-size: $font-size-body-large;
     }
 
     .hero-button-row {
@@ -49,5 +55,22 @@
             width: 240px;
             margin-bottom: 12px;
         }
+    }
+}
+
+.hero-container.small {
+    height: 220px;
+
+    
+
+    .hero-subtitle {
+        color: white;
+        margin-bottom: 0px;
+    }
+}
+
+.small {
+    .hero-row {
+        background-color: rgba(0, 0, 0, 0.5);
     }
 }

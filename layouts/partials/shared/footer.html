@@ -4,19 +4,19 @@
             <div class="row justify-content-between footer-row">
                 <div class="col-sm-12 col-md-4 order-last order-md-first footer-col">
                     <div class="footer-logo-container align-top">
-                        <img class="brand-logo" src="{{.Site.BaseURL}}/img/broadmoor-logo.png"></img>
+                        <img class="brand-logo" src="{{.Site.BaseURL}}/img/wingpoint.png"></img>
                     </div>
                     <div class="footer-brand-container align-top">
-                        <h4 class="footer-brand-title">Broadmoor</h4>
-                        <p class="footer-brand-subtitle">Golf Club</p>
+                        <h4 class="footer-brand-title">{{ $.Site.Data.shared.footer.title }}</h4>
+                        <p class="footer-brand-subtitle">{{ $.Site.Data.shared.footer.subtitle }}</p>
                         <div class="copyright-container">
-                            <p class="copyright-label">2018 Broadmoor Golf Club</p>
+                            <p class="copyright-label">{{ $.Site.Data.shared.footer.subtitle }}</p>
                             <p class="powered-by-label">Powered By <span class="brand-link">ClubHub</span></p>
                         </div>
                     </div>
                 </div>
                 {{range $.Site.Data.shared.footer.sections}}
-                    <div class="col-sm-pull-12 col-md-4 footer-col right-align">
+                    <div class="col-sm-pull-12 col-md-3 footer-col right-align">
                         <div class="section-detail-container">
                             <h6 class="footer-section-title">{{.title }}</h6>
                             {{range .items}}

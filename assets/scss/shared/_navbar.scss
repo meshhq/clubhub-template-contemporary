@@ -8,8 +8,10 @@
         padding: 10px 12px 10px 12px;
     }
 
-    h5 {
-        display: inline;
+    .nav-title {
+        font-size: 21px;
+        font-family: $primary-font;
+        color: $theme-primary;
     }
 
     a {
@@ -18,7 +20,7 @@
 
     .brand-logo {
         display: inline;
-        max-width: 40px;
+        max-width: 80px;
         margin-right: 6px;
     }
 

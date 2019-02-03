@@ -1,12 +1,14 @@
+
+
 <div class="detail-shortcode detail-info">
     {{ $section := index .Site.Data.sections (.Get 0) }}
     {{ $data := index $section (.Get 1) }}
     {{ $info := index $data (.Get 2) }}
-    <div class="row">
+    <div class="row detail-info-row">
         <div class="col">
             <p class="title">LOCATION</p>
-            <p class="detail">{{ $info.address.street}}</p>
-            <p class="detail">{{ $info.address.city }} {{ $info.address.state }} {{ $info.address.zip }}</p>
+            <a class="detail">{{ $info.address.street}}</a>
+            <a class="detail">{{ $info.address.city }} {{ $info.address.state }} {{ $info.address.zip }}</a>
         </div>
         <div class="col">
             <p class="title">HOURS</p>
@@ -15,11 +17,13 @@
         </div>
         <div class="col">
             <p class="title">GET IN TOUCH</p>
-            <p class="detail">{{ $info.contact.phone }}</p>
-            <p class="detail">{{ $info.contact.email }}</p>
+            <a class="detail">{{ $info.contact.phone }}</a>
+            <a class="detail">{{ $info.contact.email }}</a>
         </div>
     </div>
-    <div class="row">
-        
+    <div class="row map-row"> 
+        <div class="feature map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10754.886756228187!2d-122.50059!3d47.631541!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x609a578e6f3fef41!2sWing+Point+Golf+%26+Country+Club!5e0!3m2!1sen!2sus!4v1549062934628" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
     </div>
  </div>

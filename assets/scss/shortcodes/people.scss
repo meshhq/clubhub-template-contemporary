@@ -1,0 +1,31 @@
+.detail-person {
+    h5 {
+        margin-bottom: 12px;
+    }
+    p, a {
+        font-size: 14px;
+        line-height: 1;
+        margin-bottom: 0.75em;
+        display: block;
+    }
+
+    a {
+        color: $theme-primary !important;
+        text-decoration: underline !important;
+    }
+
+    .detail-info-row {
+        border: 1px $theme-primary-gray solid;
+        border-top: 2px $theme-primary solid;
+        padding: 18px 18px 18px 18px;
+        margin-bottom: 24px;
+    }
+
+    .person-image-col {
+        padding: 0px;
+    }
+
+    .person-detail-col {
+        padding-right: 0px;
+    }
+}

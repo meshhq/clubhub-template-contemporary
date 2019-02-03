@@ -17,6 +17,10 @@ hr.light {
     border-color: white;
 }
 
+//-----------------------------------------------
+// Font Styling
+//-----------------------------------------------
+
 h1,
 h2,
 h3,
@@ -24,36 +28,34 @@ h4,
 h5 {
     font-family: $primary-font;
     color: $theme-primary;
-    font-weight: 700;
-    margin-bottom: 48px;
+    font-weight: 500;
+    margin-bottom: 24px;
 }
 
 h1 {
-    font-size: 60px;
-    margin-bottom: 0px;
+    font-size: $font-size-heading-x-large;
 }
 
 h2 {
-    font-size: 48px;
+    font-size: $font-size-heading-large;
 }
 
 h3 {
-    font-size: 36px;
+    font-size: $font-size-heading-medium;
 }
 
 h4 {
-    font-size: 27px;
+    font-size: $font-size-heading-small;
 }
 
 h5 {
-    font-size: 21px;
-    margin-bottom: 0px;
+    font-size: $font-size-heading-x-small;
 }
 
 h6 {
     font-family: Avenir;
     color: $theme-primary-light;
-    font-size: 10px;
+    font-size: $font-size-body-small;
     font-weight: 500;
     margin-bottom: 12px;
 }
@@ -61,19 +63,19 @@ h6 {
 p {
     font-family: Avenir;
     color: $theme-primary-light;
-    font-size: 12px;
+    font-size: $font-size-body-small;
     font-weight: 300;
-    line-height: 1.5;
+    line-height: 2;
 }
 
 a {
     @include transition-all;
     font-family: Avenir;
-    font-size: 12px;
+    font-size: $font-size-body-small;
     font-weight: 300;
     color: $theme-primary-light;
     cursor: pointer;
-    text-decoration: underline;
+    text-decoration: none;
 
     &:hover,
     &:focus {
@@ -82,19 +84,33 @@ a {
     }
 }
 
-.hero-subtitle {
-    font-size: 21px;
+li {
     font-family: Avenir;
-    color: white;
+    color: $theme-primary-light;
+    font-size: $font-size-body-medium;
     font-weight: 300;
-    font-size: 21px;
-    margin-bottom: 0px;
+    line-height: 2;
 }
+
+//-----------------------------------------------
+// Images
+//-----------------------------------------------
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: 4px;
+}
+//-----------------------------------------------
+// Buttons
+//-----------------------------------------------
 
 .btn {
     border-radius: 2px;
     font-family: Avenir;
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 500;
 
     &:hover,
@@ -103,6 +119,10 @@ a {
         color: $theme-primary !important;
     }
 }
+
+//-----------------------------------------------
+// Sections
+//-----------------------------------------------
 
 section {
     padding: 100px 0;
@@ -117,25 +137,47 @@ section {
     margin-right: 0px;
 
     .section-col {
-        padding-top: 48px;
-        padding-bottom: 48px;
+        padding-top: 24px;
+        padding-bottom: 24px;
         border-top: 1px solid $theme-primary-gray;
-        max-width: 784px;
-        
-        @media (max-width: $screen-md) { 
-            padding-left: 24px;
-            padding-right: 24px;
+        max-width: $screen-lg;
+
+        @media (max-width: $screen-md) {
+            padding-left: 12px;
+            padding-right: 12px;
         }
+    }
+
+    .section-col-wide {
+        max-width: $screen-lg;
+    }
+
+    .section-col-narrow {
+        max-width: $screen-md;
     }
 }
 
-// Bootstrap Override.
+//-----------------------------------------------
+// Rows - Bootstrap Override
+//-----------------------------------------------
+
 .row {
     margin-left: 0px;
     margin-right: 0px;
 }
 
+//-----------------------------------------------
+// Cols - Bootstrap Override
+//-----------------------------------------------
+
 .col {
     padding-right: 0px;
     padding-left: 0px;
 }
+
+//-----------------------------------------------
+// CSS Animations
+//-----------------------------------------------
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.05); }

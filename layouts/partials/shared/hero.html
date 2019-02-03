@@ -1,10 +1,9 @@
-<div class="container-fluid" id="hero-container">
+{{ if eq .Page.Title "index" }}
+<div class="container-fluid hero-container" style="background-image:url({{ $.Site.Data.index.hero.imageURL }})">
     <div class="row hero-row">
-        <div class="col hero-col">
+        <div class="col hero-col align-self-center">
             <h1 class="hero-title">{{ $.Site.Data.index.hero.title }}</h1>
             <p class="hero-subtitle">{{ $.Site.Data.index.hero.subtitle }}</p>
-
-            {{ if eq .Page.Title "index" }}
             <div class="row hero-button-row align-items-center">
                 <div class="col-sm-12 col-md-6 hero-button-login-col">
                     <button class="btn btn-outline-dark hero-button login-button">{{ $.Site.Data.index.hero.leftButton }}</button>
@@ -13,7 +12,17 @@
                     <button class="btn btn-outline-dark hero-button info-button">{{ $.Site.Data.index.hero.rightButton }}</button>
                 </div>
             </div>
-            {{ end }}
         </div>
     </div>
 </div>
+{{ else }} 
+{{ $data := index $.Site.Data.sections $.Section}}
+{{ $pageData := index $data $.Title }}
+<div class="container-fluid hero-container small" style="background-image:url({{ $pageData.hero.imageURL }})">
+    <div class="row hero-row">
+        <div class="col hero-col align-self-center">
+            <h2 class="hero-title">{{ $data.overview.hero.title }}</h2>
+        </div>
+    </div>
+</div>
+{{ end }}

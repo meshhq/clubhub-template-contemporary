@@ -1,3 +1,7 @@
+.detail-nav-col {
+    padding-top: 24px;
+}
+
 .detail-nav-link {
     line-height: 32px;
     display: block;
@@ -16,4 +20,40 @@
 .side-nav {
     position: sticky;
     top: 20px;
+}
+
+.detail-content-col {
+    padding-left: 24px;
+    padding-right: 24px;
+
+    @media (max-width: $screen-md) {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    h5 {
+        margin-top: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+.detail-content-single-col {
+    p {
+        font-size: 16px;
+        line-height: 2;
+    }
+}
+
+
+.md-link {
+    font-size: 16px;
+    line-height: 27px;
+}
+
+.detail-shortcode {
+    margin-top: 36px;
+    margin-bottom: 36px;
 }

@@ -1,0 +1,15 @@
+{{ $data := index $.Site.Data.sections $.Section}}
+<div class="col col-md-3 detail-nav-col">
+    <ul class="nav flex-column side-nav">
+        {{ range $data.nav }}
+            <li class="nav-item">
+                {{ $nav := index $data . }}
+                {{ if eq $.URL $nav.link}}
+                    <a class="detail-nav-link-selected" href="{{ $nav.link }}">{{ $nav.title }}</a>
+                {{ else }}
+                        <a class="detail-nav-link" href="{{ $nav.link }}">{{ $nav.title }}</a>                    
+                {{ end }}
+            </li>
+        {{ end }}
+    </ul>
+</div>

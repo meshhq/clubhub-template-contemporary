@@ -1,19 +1,36 @@
 .detail-info {
     border: 1px $theme-primary-gray solid;
     border-top: 2px $theme-primary solid;
-    padding: 28px 32px 38px 32px;
     
-    .title {
-        font-size: 12px;
-        font-weight: 500;
-        margin-bottom: 0px;
-        padding-bottom: 0px;
+    .detail-info-row {
+        padding: 28px 32px 28px 32px;
+
+        a {
+            color: $theme-primary !important;
+            display: block;
+            line-height: 2;
+            font-size: 14px;
+        }
+
+        .title {
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+        }
     }
 
-    .detail {
-        font-size: 12px;
-        font-weight: 300;
-        margin-bottom: 0px;
-        padding-bottom: 0px;
+    .map-row {
+        height: 350px;
+    }
+ 
+    .feature.map {
+        height:100%;
+        width: 100%;
+
+        iframe {
+            height:100%;
+            width:100%;
+        }
     }
 }
