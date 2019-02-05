@@ -14,15 +14,20 @@
         text-decoration: underline !important;
     }
 
-    .detail-info-row {
+    .person-detail-col {
+        margin-bottom: 24px;
+    }
+
+    .person-detail-row {
         border: 1px $theme-primary-gray solid;
         border-top: 2px $theme-primary solid;
         padding: 18px 18px 18px 18px;
-        margin-bottom: 24px;
+        height: 100%;
     }
 
     .person-image-col {
         padding: 0px;
+        max-height: 150px;
     }
 
     .person-detail-col {

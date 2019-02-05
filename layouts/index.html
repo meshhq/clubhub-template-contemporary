@@ -12,10 +12,17 @@
     <!-- Benefits -->
     {{ partial "index/benefits.html" . }}
 
+    <!-- Hero CTA -->
+    {{ partial "index/cta.html" . }}
+
     <!-- Footer -->
     {{ partial "shared/footer.html" . }}
 
     <!-- Scripts -->
     {{ partial "shared/scripts.html" . }}
-
+    
+    <!-- Script to animate section row reveals -->
+    <script>
+        ScrollReveal().reveal('.section-row', { delay: 250 });
+    </script>
 {{ end }}

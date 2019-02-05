@@ -1,11 +1,13 @@
 <div class="container-fluid" id="feature-container">
     <div class="row justify-content-center section-row">
         <div class="col section-col">
-            <div class="row justify-content-between feature-content-row">
+            
+            <!-- Start Feature Content -->
+            <div class="row justify-content-between feature-content-row grow">
                 <div class="col-sm-12 col-md-6 feature-image-col">
                     <img class="feature-image" src="{{ $.Site.Data.index.feature.imageURL }}">
                 </div>
-                <div class="col col-sm-12 col-md-6 feature-detail-col">
+                <div class="col col-sm-12 col-md-6 d-flex justify-content-end feature-detail-col">
                     <div class="feature-detail-container align-middle">
                         {{$feature := $.Site.Data.index.feature}}
                         <h6>{{ $feature.subtitle }}</h6>
@@ -14,6 +16,8 @@
                     </div>
                 </div>
             </div>
+            <!-- End Feature Content -->
+
         </div>
     </div>
 </div>

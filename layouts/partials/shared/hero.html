@@ -1,5 +1,5 @@
 {{ if eq .Page.Title "index" }}
-<div class="container-fluid hero-container" style="background-image:url({{ $.Site.Data.index.hero.imageURL }})">
+<div class="container-fluid hero-container">
     <div class="row hero-row">
         <div class="col hero-col align-self-center">
             <h1 class="hero-title">{{ $.Site.Data.index.hero.title }}</h1>
@@ -14,15 +14,29 @@
             </div>
         </div>
     </div>
+<script>
+$('<img/>').attr('src', '{{ $.Site.Data.index.hero.imageURL }}').on('load', function() {
+   $(this).remove(); // prevent memory leaks as @benweet suggested
+   $('.hero-container').css('background-image', "url('{{ $.Site.Data.index.hero.imageURL }}')");
+   $('.hero-container').animate({ opacity: 1 })
+});
+</script>
 </div>
 {{ else }} 
 {{ $data := index $.Site.Data.sections $.Section}}
 {{ $pageData := index $data $.Title }}
-<div class="container-fluid hero-container small" style="background-image:url({{ $pageData.hero.imageURL }})">
+<div class="container-fluid hero-container small">
     <div class="row hero-row">
         <div class="col hero-col align-self-center">
             <h2 class="hero-title">{{ $data.overview.hero.title }}</h2>
         </div>
     </div>
 </div>
+<script>
+$('<img/>').attr('src', '{{ $pageData.hero.imageURL }}').on('load', function() {
+   $(this).remove(); // prevent memory leaks as @benweet suggested
+   $('.hero-container').css('background-image', "url('{{ $pageData.hero.imageURL }}')");
+   $('.hero-container').animate({ opacity: 1 })
+});
+</script>
 {{ end }}

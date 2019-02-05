@@ -1,7 +1,17 @@
+.cta-content-col {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 .detail-cta {
+    width: 100%;
     border: 1px $theme-primary-gray solid;
     border-top: 2px $theme-primary solid;
     padding: 28px 32px 38px 32px;
+    
+    @media (max-width: $screen-md) { 
+        padding: 24px 24px 24px 24px;
+    }
     
     h4 {
         margin-bottom: 0px;

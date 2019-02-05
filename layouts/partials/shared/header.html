@@ -44,7 +44,13 @@
         <!-- Mapbox -->
         <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.js'></script>
         <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css' rel='stylesheet' />
+
+        {{/* Scroll Reveal */}}
+        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
         
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
         <!-- Custom styles for this template -->
         {{ $style := resources.Get "scss/index.scss" | toCSS }}
         <link href="{{ $style.Permalink }}" rel="stylesheet">

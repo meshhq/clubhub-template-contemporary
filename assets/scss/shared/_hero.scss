@@ -5,12 +5,18 @@
     width: 100%;
 
     background-repeat: no-repeat;
-    background-position: center; 
+    background-position: center top; 
     background-size: cover;
+    opacity: 0;
 
     .hero-row {
         background-color: rgba(0, 0, 0, 0.25);
         height: 100%;
+        
+        @media (max-width: $screen-sm) { 
+            padding-left: 24px;
+            padding-right: 24px;
+        }
     }
 
     .hero-col {
@@ -30,12 +36,16 @@
 
     .hero-button-row {
         margin-top: 24px;
+        
+        @media (max-width: $screen-sm) { 
+            margin-top: 48px;
+        }
     }
 
     .hero-button-login-col {
         text-align: right;
 
-        @media (max-width: $screen-sm) { 
+        @media (max-width: $screen-md) { 
             text-align: center;
         }
     }
@@ -43,7 +53,7 @@
     .hero-button-info-col {
         text-align: left;
 
-        @media (max-width: $screen-sm) { 
+        @media (max-width: $screen-md) { 
             text-align: center;
         }
     }
@@ -52,7 +62,8 @@
         @include ch-button(white, white, transparent);
 
         @media (max-width: $screen-sm) { 
-            width: 240px;
+            width: 90%;
+            height: 42px;
             margin-bottom: 12px;
         }
     }

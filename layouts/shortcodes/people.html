@@ -3,20 +3,18 @@
     {{ $data := index $section (.Get 1) }}
     {{ $items := index $data (.Get 2) }}
     {{ range $items}}
-    {{/* <div class="row detail-crush-row"> */}}
-        <div class="col-sm-6">
-            <div class="row detail-info-row">
-                <div class="col-3 person-image-col">
-                    <img class="title" src="{{.imageURL}}"></img>
-                </div>
-                <div class="col-9 person-detail-col">
-                    <h5>{{ .name }}</h5>
-                    <p class="person-info">{{ .title }}</p> 
-                    <a class="person-info">{{ .email }}</a>
-                    <a class="person-info">{{ .phone }}</a>
-                </div>
+    <div class="col-sm-6 person-detail-col">
+        <div class="row person-detail-row">
+            <div class="col-4 person-image-col">
+                <img class="person-image" src="{{.imageURL}}"></img>
+            </div>
+            <div class="col-8 person-content-col">
+                <h5>{{ .name }}</h5>
+                <p class="person-info">{{ .title }}</p> 
+                <a class="person-info">{{ .email }}</a>
+                <a class="person-info">{{ .phone }}</a>
             </div>
         </div>
-    {{/* </div> */}}
+    </div>
     {{ end }}
  </div>

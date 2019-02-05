@@ -1,3 +1,6 @@
-<div class="col col-md-12 detail-content-col">
+{{ $data := index $.Site.Data.sections $.Section}}
+{{ $page := index $data $.Title}}
+
+<div class="col col-sm-12 col-md-{{$page.span}} detail-content-col">
     {{ .Content }}
 </div>
