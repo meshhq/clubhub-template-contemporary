@@ -4,13 +4,15 @@
         padding-left: 0;
         padding-right: 0;
         margin-bottom: 30px;
-        max-width: 180px;
         max-height: 180px;
+        width: 95%;
     }
 
     .gallery-image-container {
         overflow: hidden;
         height: 100%;
+        width: 95%;
+        text-align: center;
 
         img {
             object-fit: cover;

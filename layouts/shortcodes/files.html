@@ -1,0 +1,24 @@
+<div class="detail-shortcode detail-file">
+    {{ $section := index .Site.Data.sections (.Get 0) }}
+    {{ $data := index $section (.Get 1)}}
+    {{ $file := index $data (.Get 2)}}
+
+    <div class="row detail-file-row">
+        {{ range $file.files}}
+        <div class="col col-md-{{$file.span}} detail-file-col">
+            <div class="row detail-file-content-row">
+                <div class="col col-3 d-flex align-items-center justify-content-center detail-file-icon-col">
+                    <i class="far fa-file-pdf big-icon"></i>
+                </div>  
+                <div class="col col-7 detail-file-title-col">
+                    <p class="menu-display-label">{{.displayName}}</p>
+                    <p class="menu-file-label">{{.fileName}}</p>
+                </div>
+                <div class="col col-2 detail-file-arrow-col d-flex align-items-center justify-content-center">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</div>

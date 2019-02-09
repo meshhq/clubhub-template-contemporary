@@ -2,7 +2,7 @@
     <div class="carousel-inner">
         {{ $section := index .Site.Data.sections (.Get 0) }}
         {{ $data := index $section (.Get 1)}}
-        {{ range $data.images}}
+        {{ range $data.gallery.images}}
         
             {{ if eq .index "0" }}
             <div class="carousel-item active">

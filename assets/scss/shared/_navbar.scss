@@ -19,9 +19,12 @@
     }
 
     .brand-logo {
+        height: 40px;
+        width: 40px;
         display: inline;
-        max-width: 80px;
         margin-right: 6px;
+        object-fit: contain;
+
     }
 
     .login-button {
