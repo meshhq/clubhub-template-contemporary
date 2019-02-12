@@ -3,7 +3,7 @@
 <div class="detail-shortcode detail-gallery">
      <div class="row d-flex justify-content-between detail-gallery-row"> 
         {{ range $data.gallery.images}}
-            <div class="col-xs-12 col-sm-6 col-md-{{$data.gallery1.span}} detail-gallery-col">
+            <div class="col-xs-12 col-sm-6 col-md-{{$data.gallery.span}} detail-gallery-col">
                 <div class="gallery-image-container">
                     <img src="{{ .imageURL }}" data-toggle="modal" data-target="#carousel-modal"></img>
                 </div>
@@ -16,7 +16,7 @@
 <div class="modal fade" id="carousel-modal" tabindex="-1" role="dialog" aria-labelledby="carousel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            {{ partial "sections/carousel.html" . }}
+            {{ partial "sections/carousel-modal.html" . }}
         </div>
     </div>
  </div>

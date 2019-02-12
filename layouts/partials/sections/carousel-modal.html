@@ -1,4 +1,4 @@
-<div id="hole-tour-carousel" class="carousel slide hole-tour-carousel" data-ride="carousel">
+<div id="hole-tour-carousel" class="carousel slide hole-tour-carousel" data-ride="carousel" data-interval="1000000">
     <div class="carousel-inner">
         {{ $section := index .Site.Data.sections (.Get 0) }}
         {{ $data := index $section (.Get 1)}}
@@ -6,21 +6,11 @@
         
             {{ if eq .index "0" }}
             <div class="carousel-item active">
-                <img class="d-block w-100" src="{{ .imageURL }}" alt="{{ .index }}">
-                <div class="carousel-tour-content">
-                    <h5 class="image-hole">{{ .title }}</h5>
-                    <p class="image-subtile">{{ .subtitle }}</p>
-                    <p class="image-description">{{ .description }}</p>
-                </div>
+                {{ partial "sections/carousel-item.html" . }}
             </div>
             {{ else }}
             <div class="carousel-item">
-                <img class="d-block w-100" src="{{ .imageURL }}" alt="{{ .index }}">
-                <div class="carousel-tour-content">
-                    <h5 class="image-hole">{{ .title }}</h5>
-                    <p class="image-subtile">{{ .subtitle }}</p>
-                    <p class="image-description">{{ .description }}</p>
-                </div>
+                {{ partial "sections/carousel-item.html" . }}
             </div>
             {{ end }}
         {{ end}}

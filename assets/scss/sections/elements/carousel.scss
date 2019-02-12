@@ -1,18 +1,5 @@
 .modal-dialog {
-    max-width: 800px;
-}
-
-.carousel-tour-content {
-    padding: 24px 36px;
-    
-    h5 {
-        margin: 0px;
-        margin-bottom: 8px;
-    }
-
-    .image-subtile {
-        color: gray;
-    }
+    max-width: 1000px;
 }
 
 .carousel-item {
@@ -23,5 +10,36 @@
 
 .carousel-control {
     max-height: 400px;
+}
+
+.gallery-container {
+    padding-left: 0px;
+    padding-right: 0px;   
+
+    .row {
+        border-bottom: 1px solid $theme-primary-gray;
+    }
+
+    .image-col {
+        padding-left: 0px;
+        padding-right: 0px;
+    }   
+    
+    img {
+        border-radius: 0px; 
+    }
+    
+    .content-row {
+        padding: 24px 36px;
+        
+        h5 {
+            margin: 0px;
+            margin-bottom: 8px;
+        }
+    
+        .image-subtile {
+            color: gray;
+        }
+    }
 }
 

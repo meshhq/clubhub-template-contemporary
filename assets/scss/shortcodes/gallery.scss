@@ -1,3 +1,7 @@
+.modal.fade {
+    padding-right: 0px !important;
+}
+
 .detail-gallery {
     
     .detail-gallery-col {
@@ -6,6 +10,10 @@
         margin-bottom: 30px;
         max-height: 180px;
         width: 95%;
+
+        @media (max-width: $screen-md) { 
+            width: 100%;
+        }
     }
 
     .gallery-image-container {
@@ -13,6 +21,10 @@
         height: 100%;
         width: 95%;
         text-align: center;
+
+        @media (max-width: $screen-md) { 
+            width: 100%;
+        }
 
         img {
             object-fit: cover;

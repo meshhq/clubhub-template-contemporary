@@ -1,0 +1,16 @@
+<div class="container-fluid gallery-container">
+    <div class="row image-row">
+        <div class="col-12 col-md-9 image-col" alt="{{ .index }}">
+            <img src="{{ .imageURL }}" alt="{{ .index }}">
+        </div>
+        <div class="col-12 col-md-3 d-none d-md-block image-col" alt="{{ .index }}">
+            <img src="{{ .illustrationURL }}" alt="{{ .index }}">
+        </div>
+    </div>
+    
+    <div class="row content-row">
+        <h5 class="image-hole">{{ .title }}</h5>
+        <p class="image-subtile">{{ .subtitle }}</p>
+        <p class="image-description">{{ .description }}</p>
+    </div>
+</div>
