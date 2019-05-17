@@ -1,8 +1,6 @@
 <div class="container-fluid" id="benefit-container">
     <div class="row justify-content-center section-row">
         <div class="col section-col">
-
-            <!-- Start Benefit Content -->
             <div class="row benefit-title-row">
                 <div class="col benefit-title-col">
                     <h6>{{ $.Site.Data.index.benefits.subtitle }}</h6>
@@ -11,11 +9,21 @@
             </div>
             <div class="row justify-content-between benefit-detail-row">
                 {{ range $.Site.Data.index.benefits.items }}
-                    {{ partial "index/elements/benefit.html" . }}
+                    <div class="col-md-12 col-lg-6 d-flex justify-content-center benefit-detail-col">
+                        <a class="benefit-link-container" href="{{ .link }}">
+                            <div class="benefit-detail-container grow">
+                                <img class="benefit-image" src="{{.imageURL }}"></img>    
+                                <h5 class="benefit-title">{{.title }}</h5>
+                                <p class="benefit-description">{{.description }}</p>
+                                <div class="learn-more-container">
+                                    <a class="benefit-link align-middle" href="{{ .link }}">LEARN MORE</a>
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 {{ end }}
             </div>
-            <!-- End Benefit Content -->
-
         </div>
     </div>
 </div>
